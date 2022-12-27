@@ -1,0 +1,19 @@
+--- Source/ThirdParty/AzureWrapper/AzureWrapper.Build.cs	2022-12-27 23:18:37.408647498 +0100
++++ Source/ThirdParty/AzureWrapper/AzureWrapper.Build.cs	2022-12-26 23:21:58.241469406 +0100
+@@ -45,5 +45,14 @@
+ 			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Android", "libMicrosoft.CognitiveServices.Speech.extension.kws.so"));
+ 			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Android", "libMicrosoft.CognitiveServices.Speech.extension.lu.so"));
+ 		}
++		else if (Target.Platform == UnrealTargetPlatform.Linux)
++		{
++			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Linux", "lib", "x64", "libMicrosoft.CognitiveServices.Speech.core.so"));
++			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Linux", "lib", "x64", "libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so"));
++			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Linux", "lib", "x64", "libMicrosoft.CognitiveServices.Speech.extension.codec.so"));
++			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Linux", "lib", "x64", "libMicrosoft.CognitiveServices.Speech.extension.kws.so"));
++			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Linux", "lib", "x64", "libMicrosoft.CognitiveServices.Speech.extension.lu.so"));
++			PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "libs", "Linux", "lib", "x64", "libMicrosoft.CognitiveServices.Speech.extension.mas.so"));
++		}
+ 	}
+-}
+\ No newline at end of file
++}

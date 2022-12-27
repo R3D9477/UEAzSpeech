@@ -12,3 +12,9 @@ An Unreal Engine plugin that integrates Azure Speech Cognitive Services to the E
 * [Microsoft Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/)  
 * [Supported languages](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support)  
 * [Email](mailto:contatolukevboas@gmail.com)  
+
+## Linux
+
+Added Linux support (development & target), just run `install_Linux_support.sh`
+
+tested with C++ project only & UE 4.27.2
